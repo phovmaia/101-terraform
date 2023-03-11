@@ -1,0 +1,27 @@
+[book]
+authors = ["AUTOR"]
+language = "pt"
+multilingual = false
+src = "src"
+title = "TITULO DO SEU LIVRO AQUI"
+
+[output.html]
+git-repository-url = "https://github.com/Rapha-Borges/modelo-mdbook"
+edit-url-template = "https://github.com/Rapha-Borges/modelo-mdbook/edit/main/pt/{path}"
+additional-css = ["theme/css/style.css", "theme/css/mdbook-admonish.css"]
+cname = "CNAME"
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 2
+
+[preprocessor]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "2.0.0" # do not edit: managed by `mdbook-admonish install`
