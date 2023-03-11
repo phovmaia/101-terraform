@@ -11,18 +11,16 @@ criar um 101 de terraform para quem está começando.
 Para podermos fazer um 101 de terraform precisamos entender alguns conceitos e definir
 qual será nossa caminhada aqui, então vamos lá.
 
-Primeiro vamos entender *Infrastructure as Code (IaC)*, que é a base do terraform. Segundo
-Yevgeniy Brikman, a ideia por trás do IaC é que você escreva e execute código para definir
-deployar, atualizar e destruir sua infraestrutura.
-Sou novo na área de TI mas é muito claro que aqui passa a existir uma nova visão de
-operação com a adoção desse novo midset, e temos que falar dessa de operação, pois é
-a visão de *DevOps*. Não adianta termos um cargo de DevOps Engineer se não aplicamos
-DevOps como cultura e filosofia.
+Vamos entender o que é infraestrutura como código, o impacto da adoção dessa filosofia,
+quais as ferramentas mais utilizadas no mercado, entender quais os tipos de abordagens
+que cada ferramenta utiliza e por fim vamos focar no terraform, já caindo com a mão na
+massa!
 
-Tendo essa visão nova, podemos começar a entender que um aspecto chave do mundo DevOps
-é com que possamos gerenciar quase tudo como código, e isso inclui muitos recursos como:
-servers, databases, load balancers, firewalls, DNS entries, etc.
+Vamos:
+    - configurar nossa conta na AWS
+    - instalar o terraform
 
-E o terraform? Cade? Bora lá, existem muitas ferramentas para gerenciar nossos recursos
-como código e cada uma delas tem suas vantagens e desvantagens, além de utilizarem de
-abordagens diferentes. Vamos falar um pouco sobre elas.
+OBS:
+Não vamos nos preocupar com qual OS será utilizado pois as documentações que usaremos
+incluem os exemplos para Linux, Mac e Windows e como dizia minha mãe, "ema ema ema,
+cada um com seus problemas", brincadeira e vamos pro que interessa
