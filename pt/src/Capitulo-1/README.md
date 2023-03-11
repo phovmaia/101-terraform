@@ -18,22 +18,40 @@ E o terraform? Cade? Bora lá, existem muitas ferramentas para gerenciar nossos 
 como código e cada uma delas tem suas vantagens e desvantagens, além de utilizarem de
 abordagens diferentes. Vamos falar um pouco sobre elas.
 
-Para adicionar o menu expansível basta adicionar as tags ```<details>``` e ```<summary>```. Colocando o título a ser exibido dentro da tag ```<summary>``` e abaixo o conteúdo que ficara oculto.
+## ad hoc scripts
 
-```
-<details>
-<summary class="summary">{TEXTO QUE SERÁ EXIBIDO}</summary>
-
-TEXTO QUE FICARA OCULTO
-
-</details>
-```
-
-## Exemplo
-
+Apesar de ser uma abordagem simples e uma das mais conhecidadas, eu demorei um bom tempo
+para entender o porque desse nome mas definitivamente não fiz o básico, procurar o
+significado de 'ad hoc', que nada mais é que destinado a essa finalidade.
+Então é simples, você escreve um script para fazer o que precisa e executa ele, let's go
 <details open>
-<summary class="summary">CLIQUE AQUI PARA ABRIR OU FECHAR</summary>
+<summary class="summary">script ad hoc</summary>
+Nesse exemplo vamos instalar o apache e o php, clonar um repositório do github e
+iniciar o serviço do apache.
 
-Esse exemplo está utilizando a tag ```open``` para que o menu apareça aberto por padrão.
+```
+apt-get update
+apt-get install \\
+    -y \
+    php \
+    apache 2
+git clone \
+    github.com/foo/bar \
+    var/www/html/app
+service apache2 start
+```
 
 </details>
+
+Interessante, agora podemos executar +/- 7 linhas de comando apenas com nosso script.
+Então, quando Diretor X. da aquele salve e pede para você criar um sevidor apache, já
+está tudo pronto, basta executar o script e pronto, mas e se precisar criar 10 servidores?
+20? 100? 1000? 10000? 100000? 1000000? 10000000? 100000000? 1000000000? 10000000000?
+Aí já não é mais tão simples, e aí de cara já conseguimos imaginar onde está o problema...
+Os scripts ad hoc são bem diretos e legíveis mas difíceis de manter, difíceis de reutilizar
+e inviáveis de se escalar.
+
+## ferramentas de
+
+Aqui a gente começa a escutar vários nomes do mercado, como chef, puppet e ansible
+(sim, existem várias outras). Essas ferramentas são destinadas para gerenciar a

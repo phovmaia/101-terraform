@@ -1,4 +1,4 @@
-# [terraform-101](github.com/phovmaia/terraform-101) - 101 de terraform
+# [101-terrafom](https://www.github.com/phovmaia/101-terraform)
 
 Este repo "baseado" no livro Terraform Up and Running do Yevgeniy Brikman, também
 conhecido como @brikis98 e também co-funder do terragrunt. O livro tem um repo no
