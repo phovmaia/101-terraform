@@ -1,12 +1,12 @@
 [book]
-authors = ["AUTOR"]
+authors = [Pedro Henrique Maia]
 language = "pt"
-multilingual = false
+multilingual = true
 src = "src"
-title = "TITULO DO SEU LIVRO AQUI"
+title = "101-terraform"
 
 [output.html]
-git-repository-url = "https://github.com/Rapha-Borges/modelo-mdbook"
+git-repository-url = "https://github.com/phovmaia/101-terraform"
 edit-url-template = "https://github.com/Rapha-Borges/modelo-mdbook/edit/main/pt/{path}"
 additional-css = ["theme/css/style.css", "theme/css/mdbook-admonish.css"]
 cname = "CNAME"
